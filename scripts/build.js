@@ -7,6 +7,7 @@ const output = path.join(root, "public");
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
 fs.copyFileSync(path.join(root, "index.html"), path.join(output, "index.html"));
+fs.copyFileSync(path.join(root, "styles.css"), path.join(output, "styles.css"));
 fs.cpSync(path.join(root, "D"), path.join(output, "D"), { recursive: true });
 
 fs.writeFileSync(
