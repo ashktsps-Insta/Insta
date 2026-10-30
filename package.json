@@ -4,7 +4,7 @@
   "scripts": {
     "build": "node scripts/build.js",
     "dev": "python3 -m http.server 4177 --bind 0.0.0.0",
-    "deploy": "npm run build && wrangler deploy",
-    "preview": "wrangler dev"
+    "deploy": "npm run build && npx wrangler deploy",
+    "preview": "npm run build && npx wrangler dev"
   }
 }
